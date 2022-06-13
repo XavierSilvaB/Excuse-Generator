@@ -4,26 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="stylesheet" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+    <div class="container">
+      <p class="title">Excuse Generator</p>
+      <p id="excuse">My dog eat my homework</p>
+      <p class="title2">4Geeks Academy / <strong>Xavier Silva</strong></p>
     </div>
+
+    <style>
+              body{
+               /* background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%); */
+       background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+              }
+
+      .container{
+          width: 800px;
+          height: 300px;
+          border: 1px solid white;
+          border-radius: 13px;
+          margin: 25px auto;
+          background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
+          -webkit-box-shadow: 5px 4px 15px 4px #000000;
+      box-shadow: 5px 4px 15px 4px #000000;s
+      }
+
+
+              #excuse {
+              padding:10px 15px;
+              margin: 70px 50px;
+                  color:white;
+                  font-size: 35px;
+                  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                  font-weight: 10px;
+              }
+
+              .title{
+                  width: 300px;
+                  margin: 15px 35%;
+                  color: white;
+                  font-size: 25px;
+                  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+              }
+
+                .title2{
+                  width: 300px;
+                  margin: 5px 33%;
+                  color: white;
+                  font-size: 15px;
+                  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+              }
+    </style>
+    <script src="app.js"></script>
   </body>
 </html>
